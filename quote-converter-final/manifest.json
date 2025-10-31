@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Path Converter",
+  "version": "1.0",
+  "description": "A draggable panel to convert paths by removing quotes, switching slashes, or adding quotes",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://ocn5myqwb979.feishu.cn/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

@@ -1,0 +1,162 @@
+#path-converter-panel {
+  position: fixed;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 10000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 200px;
+  min-height: 40px;
+  display: block !important;
+  transition: all 0.3s ease;
+}
+
+#panel-header {
+  background: #007bff;
+  color: white;
+  padding: 10px 12px;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+#panel-content {
+  padding: 12px;
+  display: block;
+}
+
+#input-path {
+  width: 100%;
+  height: 90px;
+  resize: vertical;
+  font-size: 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+#button-row-1, #button-row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+#button-row-2 {
+  margin-top: 8px;
+}
+
+#convert-btn, #quote-btn, #reverse-btn, #replace-tail-btn, #group-tail-btn, #out-btn, #copy-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+#convert-btn:hover, #quote-btn:hover, #reverse-btn:hover, #replace-tail-btn:hover, #group-tail-btn:hover, #out-btn:hover, #copy-btn:hover {
+  background: #0056b3;
+}
+
+#output {
+  margin-top: 12px;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.output-line, .output-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.output-text {
+  flex-grow: 1;
+  word-break: break-all;
+}
+
+.copy-line-btn, .copy-section-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 11px;
+  margin-left: 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.copy-line-btn:hover, .copy-section-btn:hover {
+  background: #218838;
+}
+
+#custom-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 10001;
+  padding: 16px;
+  width: 280px;
+}
+
+#prompt-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#suffix-input, #tails-input {
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#tails-input {
+  height: 120px;
+  resize: vertical;
+}
+
+#prompt-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+#prompt-confirm, #prompt-cancel {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+#prompt-confirm:hover, #prompt-cancel:hover {
+  background: #0056b3;
+}
